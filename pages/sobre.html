@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre - Ávila Transportes</title>
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <main>
+    <section class="sobre">
+      <h1>Sobre a Ávila Transportes</h1>
+      <p>Fundada com o objetivo de oferecer transporte rápido e seguro em todo o estado de São Paulo, utilizando vans e furgões para cargas fracionadas e expressas.</p>
+      <p>Nosso foco é eficiência, tecnologia e satisfação do cliente em cada entrega.</p>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script>
+    fetch('../components/Header.html')
+      .then(r => r.text())
+      .then(d => document.getElementById('header-placeholder').innerHTML = d);
+    fetch('../components/Footer.html')
+      .then(r => r.text())
+      .then(d => document.getElementById('footer-placeholder').innerHTML = d);
+  </script>
+</body>
+</html>

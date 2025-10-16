@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Ávila Transportes</title>
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <main>
+    <section class="hero">
+      <h1>Transporte rápido e seguro em todo o estado de São Paulo</h1>
+      <p>Serviços de carga fracionada e transporte ágil com vans e furgões.</p>
+      <a href="contato.html" class="btn">Solicitar Orçamento</a>
+    </section>
+
+    <section class="servicos-home">
+      <h2>Nossos Serviços</h2>
+      <div class="cards">
+        <div class="card-servico">
+          <h3>Entrega Expressa</h3>
+          <p>Rápido e seguro para suas cargas urgentes.</p>
+        </div>
+        <div class="card-servico">
+          <h3>Carga Fracionada</h3>
+          <p>Flexibilidade para diferentes volumes e destinos.</p>
+        </div>
+        <div class="card-servico">
+          <h3>Logística Personalizada</h3>
+          <p>Soluções sob medida para empresas e parceiros.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script>
+    fetch('../components/Header.html')
+      .then(r => r.text())
+      .then(d => document.getElementById('header-placeholder').innerHTML = d);
+    fetch('../components/Footer.html')
+      .then(r => r.text())
+      .then(d => document.getElementById('footer-placeholder').innerHTML = d);
+  </script>
+</body>
+</html>

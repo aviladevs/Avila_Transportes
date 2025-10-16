@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serviços - Ávila Transportes</title>
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+  <div id="header-placeholder"></div>
+
+  <main>
+    <section class="servicos">
+      <h1>Nossos Serviços</h1>
+      <div class="cards">
+        <div class="card-servico">
+          <h3>Entrega Expressa</h3>
+          <p>Entrega rápida em horários agendados para clientes corporativos e particulares.</p>
+        </div>
+        <div class="card-servico">
+          <h3>Carga Fracionada</h3>
+          <p>Ideal para pequenas e médias empresas que precisam de flexibilidade logística.</p>
+        </div>
+        <div class="card-servico">
+          <h3>Logística Personalizada</h3>
+          <p>Consultoria e soluções personalizadas para transportes complexos.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script>
+    fetch('../components/Header.html')
+      .then(r => r.text())
+      .then(d => document.getElementById('header-placeholder').innerHTML = d);
+    fetch('../components/Footer.html')
+      .then(r => r.text())
+      .then(d => document.getElementById('footer-placeholder').innerHTML = d);
+  </script>
+</body>
+</html>
